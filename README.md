@@ -1,4 +1,6 @@
 # JAVA 11 + Angular 12 Projeto
 Projeto Agregação Curricular
 
-# vmbears
+# GET BY SIGLAS BACKEND
+
+http://localhost:8080/agente/sigla/{sigla}
