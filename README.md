@@ -11,7 +11,7 @@
 # Navigate to frontend (should contain package.json )
 npm install
 # run the project
-ng server --open
+ng serve --open
 ```
 
 ### Run Spring Boot using Maven
