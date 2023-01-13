@@ -26,12 +26,12 @@ public class AgenteService {
 	private RegiaoRepository regiaoRepository;
 
 	public void save(MultipartFile file) throws Exception {
-        Agentes agentes = this.converterXML(file);
+        	Agentes agentes = this.converterXML(file);
         
-        agentes.getAgente().stream()
-        	.forEach(agente -> System.out.println("Código do Agente: " + agente.getCodigo()));
+		agentes.getAgente().stream()
+			.forEach(agente -> System.out.println("Código do Agente: " + agente.getCodigo()));
         
-        agentesRepository.save(agentes);
+        	agentesRepository.save(agentes);
 	}
 	
 	public List<Regiao> findBySigla(String sigla) {
@@ -41,8 +41,8 @@ public class AgenteService {
 
 	private Agentes converterXML(MultipartFile file) throws JAXBException, IOException {
 		JAXBContext jaxbContext = JAXBContext.newInstance(Agentes.class);
-        Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-        Agentes agentes = (Agentes) jaxbUnmarshaller.unmarshal(file.getInputStream());
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		Agentes agentes = (Agentes) jaxbUnmarshaller.unmarshal(file.getInputStream());
 		return agentes;
 	}
 	
