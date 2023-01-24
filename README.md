@@ -1,5 +1,7 @@
 ## Projeto para Agregação Curricular
+```bash
 Criar um sistema Web composto de um Front-end SPA (Single Page Application) Angular e um Back-end Java Spring Boot para envio de arquivos XML e posterior processamento deles.
+```
 
 ### Requisitos
 -	Criar uma interface Web para upload de um ou mais arquivos com extensão .xml.
